@@ -1,0 +1,7 @@
+<ng-container *ngIf="eventStream$ | async as toggle">
+    <span *ngIf="toggle.toolTip">{{getMessage(toggle.enabled)}}</span>
+</ng-container>
+
+<ng-container *ngIf="eventStream$ | async as ev">
+    <div style="padding-top: 20px;"><code>Child EventStream::{{ev | json}}</code></div>
+</ng-container>

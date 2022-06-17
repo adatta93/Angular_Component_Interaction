@@ -1,0 +1,11 @@
+<ng-container *ngIf="eventStream$ | async as ev">
+    <div style="padding-bottom: 20px;"><code>Parent EventStream::{{ev | json}}</code></div>
+</ng-container>
+
+
+<span>Agree to the Terms of Service</span>
+<input #toggle type="checkbox" (change)="update(toggle.checked,'enabled')" (mouseover)="update(true,'tooltip')"
+    (mouseleave)="update(false,'tooltip')" />
+
+
+<app-child [eventStream]="eventStream$"></app-child>

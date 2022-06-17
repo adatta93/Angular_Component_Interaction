@@ -1,0 +1,11 @@
+<!--<div appParent #p="parent">
+    {{p.eventStream$ | async}}
+    <ng-container *ngFor="let number of (p.counter$ | async)">
+        <app-child-one></app-child-one>
+    </ng-container>
+</div>-->
+
+<div appSibling>
+    <app-child-one></app-child-one>
+    <app-child-two></app-child-two>
+</div>

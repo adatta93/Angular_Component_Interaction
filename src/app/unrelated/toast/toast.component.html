@@ -1,0 +1,5 @@
+<ng-container *ngIf="toastStream$ | async as toast">
+    <div class="toast" *ngIf="toast.visible" [ngStyle]="{'background': toast.color}">
+        {{toast.msg}}
+    </div>
+</ng-container>

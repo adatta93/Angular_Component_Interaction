@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+html,
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+@btn-color: dodgerblue;
+button{
+    padding: 10px;
+    margin: 10px 0;
+    background-color: @btn-color;
+    color: white;
+    border: 1px solid @btn-color;
+    border-radius: 5px;
+    &:hover{
+        background-color: white;
+        color: @btn-color;
+    }
+}

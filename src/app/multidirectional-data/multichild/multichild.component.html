@@ -1,0 +1,4 @@
+<span *ngIf="processStream$ | async">
+    <span *ngIf="processState.value as state" [ngStyle]="state=='Complete' && {'color':'green'}">{{state}}</span>
+</span>
+<br>

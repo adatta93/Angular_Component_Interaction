@@ -1,0 +1,15 @@
+<div>Multi Parent ---
+    <span>{{getProcessState()}}</span>
+</div>
+<button type="button" (click)="onStartProcess()">Start Process</button>
+
+<div>
+    Multi Child 1 ---
+    <app-multichild [loadTime]="3000" [processStream$]="processStream$" (processDone)="updateStatus($event)">
+    </app-multichild>
+</div>
+<div>
+    Multi Child 2 ---
+    <app-multichild [loadTime]="5000" [processStream$]="processStream$" (processDone)="updateStatus($event)">
+    </app-multichild>
+</div>

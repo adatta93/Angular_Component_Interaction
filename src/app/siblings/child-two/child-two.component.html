@@ -1,0 +1,5 @@
+<div>Child 2</div>
+<div class="colorDiv" *ngIf="color$ | async as color"
+[ngStyle]="{'background': color}">
+  Selected Theme from Child 1
+</div>
